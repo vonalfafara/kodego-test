@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="sidebar"
+      aria-labelledby="sidebar"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="sidebar-title">This is sidebar</h5>
+        <button
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./dogs.html" class="nav-link">Dogs</a>
+            <a href="./cats.html" class="nav-link">Cats</a>
+            <a href="./contact.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary">
+      <div class="container">
+        <div class="row justify-content-between align-items-center w-100">
+          <div class="col">
+            <a href="#" class="navbar-brand">LOGO</a>
+          </div>
+          <div class="col">
+            <div class="collapse navbar-collapse justify-content-end">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                  <a
+                    href="#home"
+                    class="nav-link text-primary"
+                    aria-current="page"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Pets</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="./dogs.html" class="dropdown-item">Dogs</a>
+                    </li>
+                    <li>
+                      <a href="./cats.html" class="dropdown-item">Cats</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a href="./contact.html" class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col d-lg-none d-flex justify-content-end">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#sidebar"
+              aria-controls="sidebar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home">
+        <div class="container hero d-flex align-items-center">
+          <div class="row w-100">
+            <div
+              class="col d-flex justify-content-center flex-column text-center mb-4 text-md-start mb-md-0"
+            >
+              <h1>Welcome to PetBNB</h1>
+              <h5 class="mb-4">
+                A place where you can temporarily adopt a dog
+              </h5>
+              <div>
+                <button class="btn btn-primary btn-lg">EXPLORE</button>
+                <button class="btn">SIGN UP</button>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <img src="./assets/dog.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-secondary" id="about">
+        <h3 class="text-center pt-4 text-white">ABOUT</h3>
+        <div class="container about d-flex align-items-center">
+          <div class="row">
+            <div
+              class="col-12 col-sm-6 d-flex justify-content-center align-items-center mb-4 mb-sm-0"
+            >
+              <img src="./assets/dog.jpg" alt="" />
+            </div>
+            <div class="col-12 col-sm-6 text-white">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                adipisci optio velit mollitia tempore doloremque dolorum id quo
+                eveniet porro.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                adipisci optio velit mollitia tempore doloremque dolorum id quo
+                eveniet porro.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                adipisci optio velit mollitia tempore doloremque dolorum id quo
+                eveniet porro.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                adipisci optio velit mollitia tempore doloremque dolorum id quo
+                eveniet porro.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h3 class="text-center pt-4">Pets</h3>
+        <div
+          class="container projects d-flex align-items-center justify-content-center"
+        >
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img src="./assets/dog.jpg" class="card-img-top" alt="" />
+                <div class="card-header">Doggo</div>
+                <div class="card-body">
+                  <h5>Very nice doggo</h5>
+                  <p>Likes to play outside and run around with balls</p>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                  <button
+                    href="#"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#doggo1"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img src="./assets/dog.jpg" class="card-img-top" alt="" />
+                <div class="card-header">Doggo</div>
+                <div class="card-body">
+                  <h5>Very nice doggo</h5>
+                  <p>Likes to play outside and run around with balls</p>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                  <button
+                    href="#"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#doggo2"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="card">
+                <img src="./assets/dog.jpg" class="card-img-top" alt="" />
+                <div class="card-header">Doggo</div>
+                <div class="card-body">
+                  <h5>Very nice doggo</h5>
+                  <p>Likes to play outside and run around with balls</p>
+                </div>
+                <div class="card-footer d-flex justify-content-end">
+                  <button
+                    href="#"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#doggo3"
+                  >
+                    View More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-white">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h3>LOGO</h3>
+            <nav>
+              <a href="#home" class="text-white">Home</a>
+              <a href="#about" class="text-white">About</a>
+              <a href="#projects" class="text-white">Projects</a>
+              <a href="#contact" class="text-white">Contact Us</a>
+            </nav>
+          </div>
+          <div
+            class="col-12 col-md-6 d-flex align-items-center justify-content-end"
+          >
+            <p class="copyright">&copy; Von Alfafara. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="modal fade"
+      id="doggo1"
+      tabindex="-1"
+      aria-labelledby="Doggo Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Doggo Title</h6>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/dog.jpg" class="doggo1" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates odio dolor eius blanditiis architecto saepe omnis atque
+              cumque nisi deleniti?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates odio dolor eius blanditiis architecto saepe omnis atque
+              cumque nisi deleniti?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates odio dolor eius blanditiis architecto saepe omnis atque
+              cumque nisi deleniti?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-primary">I see...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="doggo3"
+      tabindex="-1"
+      aria-labelledby="Doggo Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Doggo Title 3</h6>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/dog.jpg" class="doggo1" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates odio dolor eius blanditiis architecto saepe omnis atque
+              cumque nisi deleniti?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-primary">I see...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="doggo2"
+      tabindex="-1"
+      aria-labelledby="Doggo Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">Doggo Title 2</h6>
+          </div>
+          <div class="modal-body">
+            <img src="./assets/dog.jpg" class="doggo1" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates odio dolor eius blanditiis architecto saepe omnis atque
+              cumque nisi deleniti?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates odio dolor eius blanditiis architecto saepe omnis atque
+              cumque nisi deleniti?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button class="btn btn-primary">I see...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
